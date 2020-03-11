@@ -9,7 +9,11 @@ model = pickle.load(open('model.pkl','rb'))
 app = Flask(__name__)
 
 # routes
-@app.route('/', methods=['POST'])
+@app.route('/', methods=['GET'])
+def hello():
+    return "Hello from ML Predict"
+    
+@app.route('/predict', methods=['POST'])
 
 def predict():
     # get data

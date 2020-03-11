@@ -3,8 +3,8 @@ import requests
 
 def test_predict():
     # local url
-    # url = 'http://127.0.0.1:5000' # change to your url
-    url = 'https://rbgautammlapi.herokuapp.com/' # change to your url
+    # url = 'http://127.0.0.1:5000/predict' # change to your url
+    url = 'https://rbgautammlapi.herokuapp.com/predict' # change to your url
     # sample data
     data = {'Pclass': 3
         , 'Age': 2
